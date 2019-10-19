@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Vending Machine</title>
+  </head>
+  <body>
+            <div class="container">
+                <h1 id="title">Vending Machine</h1>
+                <hr/>
+  <!--Vending items side  -->
+
+        <div class ="row">
+          <div class ="col-md-9">
+<div id ="items">
+
+  </div>
+
+                </div>
+
+<!-- Dollors side of the vending machine(R)
+-->
+        <div class ="col-md-3">
+          <h2>Total $ In</h2>
+          <input type="text" id='moneyIn' value="0" readonly/>
+            <div class= "col-md-6">
+                <button id= "addDollar" onclick="addMoney(1)">
+                Add Dollar
+                </button>
+
+              <button id= "addQuarter" onclick = "addMoney(.25)">
+                Add Quarter
+              </button>
+
+              <button id= "addDime" onclick="addMoney(.10)">
+
+                Add Dime
+                </button>
+
+              <button id= "addNickel" onclick="addMoney(.05)">
+                Add Nickel
+              </button>
+          </div>
+
+<hr/>
+<!-- Messages Block -->
+        <div>
+          <h2> Message</h2>
+          <input type = "text" id="message" style = "width:100%" readonly/>
+          <label >Item: </label>
+          <input type ="text" id ="itemShow" readonly/>
+          <button id= "makePurchase" onclick ="makePurchase()">
+            Make Purchase
+            </button>
+            </div>
+
+      <hr/>
+  <!-- Change block -->
+    <div>
+    <h2> Change </h2>
+    <input type = "text" id = "change" readonly/>
+    <button id ="changeReturn" onclick = "changeOut()">
+      Change Return
+    </button>
+
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="vendingMachine.js"></script>
+  </body>
+</html>
