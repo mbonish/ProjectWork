@@ -1,0 +1,4 @@
+com\sg\flooring\service\ServiceLayerTest.class
+com\sg\flooring\dao\ProductDaoTest.class
+com\sg\flooring\dao\OrderDaoTest.class
+com\sg\flooring\dao\TaxesDaoTest.class
